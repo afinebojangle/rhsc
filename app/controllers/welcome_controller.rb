@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
 
   def surgeons
   end
+  
+  def before
+  end
 end
