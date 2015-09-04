@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  
+<div class="container">  
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -19,9 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <%= image_tag("Red Hills Logo.jpg", style: "width: 100px") %>
-      </a>
+      <%= link_to image_tag("Red Hills Logo.jpg", class: "navbar-brand", style: "width: 100px"), root_path %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,6 +45,6 @@
 
 
 <%= yield %>
-
+</div>
 </body>
 </html>
